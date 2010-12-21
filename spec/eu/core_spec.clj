@@ -1,6 +1,10 @@
 (ns eu.core
-  (:use [eu.core] :reload)
-  (:use [clojure.test]))
+  (:use [eu.core] :reload
+        [speclj.core]))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(describe "Project Euler eu.core tests"
+
+  (it "should be divisible"
+      (should (divisible? 4 2))))
+
+;(run-specs)
