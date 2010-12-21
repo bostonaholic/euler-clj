@@ -1,1 +1,1 @@
-(ns eu.core-spec)
+(ns eu.core)
