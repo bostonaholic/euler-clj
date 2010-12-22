@@ -11,5 +11,5 @@
   (take n (fib-sequence)))
 
 (defn fib-less-than [x]
-  (take-while (fn [n]
-                (< n x)) (fib-sequence)))
+ (take-while (fn [y]
+                (< y x)) (fib-sequence)))
