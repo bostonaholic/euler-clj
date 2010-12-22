@@ -1,5 +1,5 @@
 (ns eu.euler2
-  (:use [eu.euler2] :reload
+  (:use [eu.euler2]
         [speclj.core]))
 
 (describe "Project Euler problem 2"

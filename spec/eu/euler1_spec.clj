@@ -1,5 +1,5 @@
 (ns eu.euler1
-  (:use [eu.euler1] :reload
+  (:use [eu.euler1]
         [speclj.core]))
 
 (describe "Project Euler problem 1"
@@ -16,5 +16,3 @@
 
   (it "should find for 1 to 1000"
       (should= 233168 (euler1 1000))))
-
-;(run-specs)

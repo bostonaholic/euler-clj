@@ -1,5 +1,5 @@
 (ns eu.core
-  (:use [eu.core] :reload
+  (:use [eu.core]
         [speclj.core]))
 
 (describe "Project Euler eu.core tests"
