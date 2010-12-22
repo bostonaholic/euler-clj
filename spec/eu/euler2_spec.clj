@@ -2,7 +2,7 @@
   (:use [eu.euler2] :reload
         [speclj.core]))
 
-(describe "Project Euler problem 1"
+(describe "Project Euler problem 2"
 
   (it "should solve mini euler2"
       (should= 10 (euler2 9)))
