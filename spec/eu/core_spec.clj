@@ -12,6 +12,12 @@
       (should= '(0 1 1 2 3 5 8 13) (fib 8)))
 
   (it "should return items in fib sequence less than x"
-      (should= '(0 1 1 2 3 5) (fib-less-than 8))))
+      (should= '(0) (fib-less-than 1))
+      (should= '(0 1 1 2 3 5) (fib-less-than 8)))
+  
+  (it "should return the square of a number"
+      (should= 25 (square 5))
+      (should= 144 (square 12)))
 
-;(run-specs)
+  (it "should create a sequence up to n"
+      (should= '(1 2 3 4 5) (seq-upto 5))))
