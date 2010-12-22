@@ -2,7 +2,7 @@
   (:use [eu.euler6]
         [speclj.core]))
 
-(describe "Poject Euler problem 6"
+(describe "Project Euler problem 6"
 
   (it "should find the sum of squares"
       (should= 385 (sum-of-squares 10)))
