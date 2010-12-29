@@ -5,7 +5,8 @@
 (describe "Project Euler eu.core tests"
 
   (it "should be divisible"
-      (should (divisible? 4 2)))
+      (should (divisible? 4 2))
+      (should (divisible? 21 7)))
 
   (it "should return first x items in fibonacci sequence"
       (should= '(0 1 1) (fib 3))
