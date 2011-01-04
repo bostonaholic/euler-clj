@@ -28,6 +28,8 @@
     (should= '(2 4) (factors 8))
     (should= '(3 5) (factors 15))
     (should= '(3) (factors 9))
+    (should= '() (factors 37))
+    (should= '(2 4 11 22) (factors 44))
     (should= '() (factors Integer/MAX_VALUE))
     (should= '() (factors 17)))
 
