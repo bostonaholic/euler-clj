@@ -11,8 +11,9 @@
   (take n (fib-sequence)))
 
 (defn fib-less-than [x]
-  (take-while (fn [y]
-                (< y x)) (fib-sequence)))
+  (take-while
+    (fn [y]
+      (< y x)) (fib-sequence)))
 
 (defn square [x]
   (* x x))
