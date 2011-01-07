@@ -64,3 +64,16 @@
                          (- (.length (str s)) 1)))
     :else
       false))
+
+(defn common-multiples [a b]
+  (remove nil?
+    (for [i (range 1 (+ 1 (* a b)))]
+      (if (and (divisible? i a)
+               (divisible? i b))
+        i))))
+
+(defn least [r]
+  (first (sort r)))
+
+(defn lcm [a b]
+  (least (common-multiples a b)))
