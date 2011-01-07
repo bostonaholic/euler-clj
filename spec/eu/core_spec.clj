@@ -24,14 +24,19 @@
     (should= '(1 2 3 4 5) (seq-upto 5)))
 
   (it "should find all factors"
+    (should= '() (factors 2))
     (should= '() (factors 3))
+    (should= '(2) (factors 4))
+    (should= '() (factors 5))
+    (should= '(2 3) (factors 6))
+    (should= '() (factors 7))
     (should= '(2 4) (factors 8))
-    (should= '(3 5) (factors 15))
     (should= '(3) (factors 9))
+    (should= '(3 5) (factors 15))
+    (should= '(2 3 4 6 8 12) (factors 24))
     (should= '() (factors 37))
     (should= '(2 4 11 22) (factors 44))
-    (should= '() (factors Integer/MAX_VALUE))
-    (should= '() (factors 17)))
+    (should= '() (factors Integer/MAX_VALUE)))
 
   (it "should be able to find a prime"
     (should-not (prime? -14))
@@ -42,10 +47,12 @@
     (should-not (prime? 6))
     (should (prime? 7))
     (should-not (prime? 9))
+    (should (prime? 37))
     (should (prime? 7907))
     (should-not (prime? 14))
     (should (prime? Integer/MAX_VALUE)))
   
   (it "should find the prime factors"
     (should= '(3 5) (prime-factors 15))
+    (should= '(2 3) (prime-factors 24))
     (should= '(5 7 13 29) (prime-factors 13195))))

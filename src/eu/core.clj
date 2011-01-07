@@ -20,3 +20,29 @@
 
 (defn seq-upto [n]
   (take n (iterate inc 1)))
+
+(defn loop-factors [x r]
+  (for [i r
+        :when (divisible? x i)]
+    i))
+
+(defn factors [x]
+  (cond
+    (and (not (= x 2)) (even? x))
+      (cons 2 (loop-factors x (range 3 (+ 1 (/ x 2)))))
+    (and (not (= x 3)) (divisible? x 3))
+      (cons 3 (loop-factors x (range 4 (+ 2 (Math/sqrt x)))))
+    :else
+      (loop-factors x (range 3 (+ 1 (Math/sqrt x))))))
+
+(defn no-factors? [x]
+  (= '() (factors x)))
+
+(defn prime? [x]
+  (cond
+    (or (= x 2) (= x 3)) true
+    (or (< x 2) (even? x)) false
+    :else (no-factors? x)))
+
+(defn prime-factors [x]
+  (filter prime? (factors x)))
