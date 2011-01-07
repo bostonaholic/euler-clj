@@ -55,4 +55,12 @@
   (it "should find the prime factors"
     (should= '(3 5) (prime-factors 15))
     (should= '(2 3) (prime-factors 24))
-    (should= '(5 7 13 29) (prime-factors 13195))))
+    (should= '(5 7 13 29) (prime-factors 13195)))
+
+  (it "should recognize a palindrome"
+    (should (palindrome? 1))
+    (should-not (palindrome? 12))
+    (should (palindrome? 121))
+    (should (palindrome? 12321))
+    (should (palindrome? 1221))
+    (should-not (palindrome? 122334533221))))

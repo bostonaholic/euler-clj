@@ -5,7 +5,8 @@
 
 (defn fib-sequence []
   ((fn fib-recur [a b]
-     (cons a (lazy-seq (fib-recur b (+ a b))))) 0 1))
+     (cons a
+           (lazy-seq (fib-recur b (+ a b))))) 0 1))
 
 (defn fib [n]
   (take n (fib-sequence)))
@@ -40,9 +41,26 @@
 
 (defn prime? [x]
   (cond
-    (or (= x 2) (= x 3)) true
-    (or (< x 2) (even? x)) false
+    (or (= x 2)
+        (= x 3))
+      true
+    (or (< x 2)
+        (even? x))
+      false
     :else (no-factors? x)))
 
 (defn prime-factors [x]
   (filter prime? (factors x)))
+
+(defn palindrome? [s]
+  (cond
+    (or (= 0 (.length (str s)))
+        (= 1 (.length (str s))))
+      true
+    (= (first (str s))
+       (last (str s)))
+      (palindrome? (subs (str s)
+                         1
+                         (- (.length (str s)) 1)))
+    :else
+      false))
