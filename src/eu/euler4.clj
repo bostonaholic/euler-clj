@@ -4,8 +4,8 @@
 (defn palindromes-from-product [x y]
   (distinct
     (remove nil?
-      (for [a (range 1 (+ 1 x))
-            b (range 1 (+ 1 y))]
+      (for [a (range x (+ 1 y))
+            b (range x (+ 1 y))]
         (if (palindrome? (* a b))
           (* a b))))))
 
