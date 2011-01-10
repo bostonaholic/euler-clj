@@ -72,8 +72,11 @@
                (divisible? i b))
         i))))
 
-(defn least [r]
-  (first (sort r)))
+(defn least [coll]
+  (first (sort coll)))
+
+(defn largest [coll]
+  (last (sort coll)))
 
 (defn lcm [a b]
   (least (common-multiples a b)))

@@ -10,4 +10,4 @@
           (* a b))))))
 
 (defn euler4 [x y]
-  (last (sort (palindromes-from-product x y))))
+  (largest (palindromes-from-product x y)))

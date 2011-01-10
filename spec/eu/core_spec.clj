@@ -72,6 +72,9 @@
   (it "should find the smallest number of a sequence"
     (should= 1 (least '(5 9 1 3))))
 
+  (it "should find the largest number of a sequence"
+    (should= 9 (largest '(5 9 1 3))))
+
   (it "should find the least common multiple of 2 numbers"
     (should= 15 (lcm 3 5))
     (should= 12 (lcm 4 6))))
