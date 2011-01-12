@@ -65,18 +65,18 @@
     :else
       false))
 
+(defn least [coll]
+  (first (sort coll)))
+
+(defn largest [coll]
+  (last (sort coll)))
+
 (defn common-multiples [a b]
   (remove nil?
     (for [i (range 1 (+ 1 (* a b)))]
       (if (and (divisible? i a)
                (divisible? i b))
         i))))
-
-(defn least [coll]
-  (first (sort coll)))
-
-(defn largest [coll]
-  (last (sort coll)))
 
 (defn lcm [a b]
   (least (common-multiples a b)))
