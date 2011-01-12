@@ -65,15 +65,16 @@
     (should (palindrome? 1221))
     (should-not (palindrome? 122334533221)))
 
-  (it "should find the common multiples up to a * b"
-    (should= '(6) (common-multiples 2 3))
-    (should= '(12 24) (common-multiples 4 6)))
-
   (it "should find the smallest number of a sequence"
     (should= 1 (least '(5 9 1 3))))
 
   (it "should find the largest number of a sequence"
     (should= 9 (largest '(5 9 1 3))))
+
+  (it "should find the common multiples up to a * b"
+    (should= '(6) (common-multiples 2 3))
+    (should= '(15) (common-multiples 5 3))
+    (should= '(12 24) (common-multiples 4 6)))
 
   (it "should find the least common multiple of 2 numbers"
     (should= 15 (lcm 3 5))
