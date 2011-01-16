@@ -9,3 +9,6 @@
 
 (defn euler6 [n]
   (- (square-of-sums n) (sum-of-squares n)))
+
+(defn solution []
+  (euler6 100))

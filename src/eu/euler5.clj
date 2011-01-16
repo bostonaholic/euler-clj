@@ -3,3 +3,6 @@
 
 (defn euler5 [n]
   (reduce lcm (range 1 (+ 1 n))))
+
+(defn solution []
+  (euler5 20))

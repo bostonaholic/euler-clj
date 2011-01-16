@@ -11,3 +11,6 @@
 
 (defn euler4 [x y]
   (largest (palindromes-from-product x y)))
+
+(defn solution []
+  (euler4 100 999))

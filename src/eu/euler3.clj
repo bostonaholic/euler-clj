@@ -4,3 +4,5 @@
 (defn euler3 [x]
   (last (prime-factors x)))
 
+(defn solution []
+  (euler3 600851475143))
