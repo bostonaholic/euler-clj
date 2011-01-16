@@ -7,8 +7,8 @@ Solutions to [Project Euler](http://projecteuler.net/) problem set in Clojure, w
 1. Install [Leiningen](https://github.com/technomancy/leiningen).
 2. Run `lein deps` to download the dependencies.
 3. Run `lein repl` to run a Read-Eval-Print Loop.
-4. Require a proper namespace for the solution (example: `(require 'eu.euler15)` for solution to problem 15).
-5. Run `(ns/solution)` where `ns` is the required namespace (example: `(eu.euler15/solution)`). It should print a solution to the chosen problem.
+4. Require a proper namespace for the solution (example: `(require 'eu.euler015)` for solution to problem 15).
+5. Run `(ns/solution)` where `ns` is the required namespace (example: `(eu.euler015/solution)`). It should print a solution to the chosen problem.
 
 You can also run `lein spec` to run all [speclj](https://github.com/slagyr/speclj) unit tests (this may take awhile).
 
