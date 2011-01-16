@@ -1,4 +1,4 @@
-(ns eu.euler6
+(ns eu.euler006
   (:use eu.core))
 
 (defn sum-of-squares [n]
@@ -7,8 +7,8 @@
 (defn square-of-sums [n]
   (square (reduce + (seq-upto n))))
 
-(defn euler6 [n]
+(defn euler006 [n]
   (- (square-of-sums n) (sum-of-squares n)))
 
 (defn solution []
-  (euler6 100))
+  (euler006 100))

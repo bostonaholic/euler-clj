@@ -1,8 +1,8 @@
-(ns eu.euler3
+(ns eu.euler003
   (:use eu.core))
 
-(defn euler3 [x]
+(defn euler003 [x]
   (last (prime-factors x)))
 
 (defn solution []
-  (euler3 600851475143))
+  (euler003 600851475143))

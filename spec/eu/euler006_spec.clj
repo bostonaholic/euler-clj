@@ -1,5 +1,5 @@
-(ns eu.euler6
-  (:use [eu.euler6]
+(ns eu.euler006
+  (:use [eu.euler006]
         [speclj.core]))
 
 (describe "Project Euler problem 6"
@@ -11,7 +11,7 @@
     (should= 3025 (square-of-sums 10)))
           
   (it "should find the square of sums less sum of squares"
-    (should= 2640 (euler6 10)))
+    (should= 2640 (euler006 10)))
     
   (it "should solve euler 6"
-    (should= 25164150 (euler6 100))))
+    (should= 25164150 (euler006 100))))

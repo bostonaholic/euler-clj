@@ -1,5 +1,5 @@
-(ns eu.euler1
-  (:use [eu.euler1]
+(ns eu.euler001
+  (:use [eu.euler001]
         [speclj.core]))
 
 (describe "Project Euler problem 1"
@@ -12,7 +12,7 @@
     (should-not (mod3or5 7)))
 
   (it "should be 23 for 1 to 10"
-    (should= 23 (euler1 10)))
+    (should= 23 (euler001 10)))
 
   (it "should find for 1 to 1000"
-    (should= 233168 (euler1 1000))))
+    (should= 233168 (euler001 1000))))

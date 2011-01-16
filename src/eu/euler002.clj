@@ -1,8 +1,8 @@
-(ns eu.euler2
+(ns eu.euler002
   (:use eu.core))
 
-(defn euler2 [x]
+(defn euler002 [x]
   (reduce + (filter even? (fib-less-than x))))
 
 (defn solution []
-  (euler2 4000000))
+  (euler002 4000000))

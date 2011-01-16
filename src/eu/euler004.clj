@@ -1,4 +1,4 @@
-(ns eu.euler4
+(ns eu.euler004
   (:use eu.core))
 
 (defn palindromes-from-product [x y]
@@ -9,8 +9,8 @@
         (if (palindrome? (* a b))
           (* a b))))))
 
-(defn euler4 [x y]
+(defn euler004 [x y]
   (largest (palindromes-from-product x y)))
 
 (defn solution []
-  (euler4 100 999))
+  (euler004 100 999))

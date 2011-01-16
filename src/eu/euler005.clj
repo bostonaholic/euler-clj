@@ -1,8 +1,8 @@
-(ns eu.euler5
+(ns eu.euler005
   (:use eu.core))
 
-(defn euler5 [n]
+(defn euler005 [n]
   (reduce lcm (range 1 (+ 1 n))))
 
 (defn solution []
-  (euler5 20))
+  (euler005 20))
