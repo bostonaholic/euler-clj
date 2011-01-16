@@ -1,7 +1,7 @@
 (ns eu.core)
 
 (defn divisible? [x, divisor]
-  (= 0 (rem x divisor)))
+  (zero? (rem x divisor)))
 
 (defn fib-sequence []
   ((fn fib-recur [a b]
