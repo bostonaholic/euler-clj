@@ -63,6 +63,7 @@
     (should (palindrome? 121))
     (should (palindrome? 12321))
     (should (palindrome? 1221))
+    (should (palindrome? "gohangasalamiimalasagnahog"))
     (should-not (palindrome? 122334533221)))
 
   (it "should find the smallest number of a sequence"
