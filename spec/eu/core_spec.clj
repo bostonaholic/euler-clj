@@ -78,4 +78,9 @@
 
   (it "should find the least common multiple of 2 numbers"
     (should= 15 (lcm 3 5))
-    (should= 12 (lcm 4 6))))
+    (should= 12 (lcm 4 6)))
+
+  (it "should return the nth prime number"
+    (should= 2 (nth-prime 1))
+    (should= 13 (nth-prime 6))))
+

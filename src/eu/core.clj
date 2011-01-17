@@ -80,3 +80,10 @@
 
 (defn lcm [a b]
   (least (common-multiples a b)))
+
+(defn prime-sequence []
+  (filter prime? (iterate inc 1)))
+
+(defn nth-prime [n]
+  (last (take n (prime-sequence))))
+
