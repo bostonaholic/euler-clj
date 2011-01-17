@@ -68,7 +68,7 @@
 (defn least [coll]
   (first (sort coll)))
 
-(defn largest [coll]
+(defn greatest [coll]
   (last (sort coll)))
 
 (defn common-multiples [a b]

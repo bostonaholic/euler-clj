@@ -68,8 +68,8 @@
   (it "should find the smallest number of a sequence"
     (should= 1 (least '(5 9 1 3))))
 
-  (it "should find the largest number of a sequence"
-    (should= 9 (largest '(5 9 1 3))))
+  (it "should find the greatest number of a sequence"
+    (should= 9 (greatest '(5 9 1 3))))
 
   (it "should find the common multiples up to a * b"
     (should= '(6) (common-multiples 2 3))

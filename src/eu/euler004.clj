@@ -10,7 +10,7 @@
           (* a b))))))
 
 (defn euler004 [x y]
-  (largest (palindromes-from-product x y)))
+  (greatest (palindromes-from-product x y)))
 
 (defn solution []
   (euler004 100 999))
