@@ -1,5 +1,6 @@
 (ns eu.euler001
-  (:use eu.core))
+  (:use [eu.core]
+        [math.core]))
 
 (defn mod3or5 [x]
   (or (divisible? x 3)

@@ -1,5 +1,6 @@
 (ns eu.euler006
-  (:use eu.core))
+  (:use [eu.core]
+        [math.core]))
 
 (defn sum-of-squares [n]
   (reduce + (map square (seq-upto n))))

@@ -1,5 +1,6 @@
 (ns eu.euler005
-  (:use eu.core))
+  (:use [eu.core]
+        [math.core]))
 
 (defn euler005 [n]
   (reduce lcm (range 1 (+ 1 n))))

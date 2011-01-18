@@ -1,5 +1,6 @@
 (ns eu.euler004
-  (:use eu.core))
+  (:use [eu.core]
+        [math.core]))
 
 (defn palindromes-from-product [x y]
   (distinct

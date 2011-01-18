@@ -1,5 +1,6 @@
 (ns eu.euler003
-  (:use eu.core))
+  (:use [eu.core]
+        [math.prime]))
 
 (defn euler003 [x]
   (last (prime-factors x)))
