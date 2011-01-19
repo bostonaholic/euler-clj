@@ -1,5 +1,4 @@
-(ns math.fibonacci
-  (:use [math.core]))
+(ns math.fibonacci)
 
 (defn fib-sequence []
   ((fn fib-recur [a b]
