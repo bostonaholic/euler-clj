@@ -40,5 +40,9 @@
     (should= '(2 3 4 6 8 12) (factors 24))
     (should= '() (factors 37))
     (should= '(2 4 11 22) (factors 44))
-    (should= '() (factors Integer/MAX_VALUE))))
+    (should= '() (factors Integer/MAX_VALUE)))
+
+  (it "should find the product for a collection of integers"
+    (should= 5 (product-of-collection '(5)))
+    (should= 25 (product-of-collection '(5 5)))))
 

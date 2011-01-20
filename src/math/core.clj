@@ -39,3 +39,6 @@
 (defn no-factors? [x]
   (= '() (factors x)))
 
+(defn product-of-collection [coll]
+  (reduce * coll))
+
