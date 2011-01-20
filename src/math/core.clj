@@ -7,10 +7,10 @@
   (* x x))
 
 (defn least [coll]
-  (first (sort coll)))
+  (apply min coll))
 
 (defn greatest [coll]
-  (last (sort coll)))
+  (apply max coll))
 
 (defn common-multiples [a b]
   (distinct (remove nil?

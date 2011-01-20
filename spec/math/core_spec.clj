@@ -12,7 +12,7 @@
     (should= 25 (square 5))
     (should= 144 (square 12)))
 
-  (it "should find the smallest number of a sequence"
+  (it "should find the least number of a sequence"
     (should= 1 (least '(5 9 1 3))))
 
   (it "should find the greatest number of a sequence"
