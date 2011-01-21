@@ -20,3 +20,7 @@
 (defn nth-prime [n]
   (last (take n (prime-sequence))))
 
+(defn primes-below-n [n]
+  (take-while
+    (fn [y]
+      (< y n)) (prime-sequence)))

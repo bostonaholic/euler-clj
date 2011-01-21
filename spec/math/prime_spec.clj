@@ -25,5 +25,8 @@
 
   (it "should return the nth prime number"
     (should= 2 (nth-prime 1))
-    (should= 13 (nth-prime 6))))
+    (should= 13 (nth-prime 6)))
+
+  (it "should find the list of primes below n"
+    (should= '(2 3 5 7) (primes-below-n 10))))
 
