@@ -12,12 +12,16 @@
 (defn greatest [coll]
   (apply max coll))
 
+(defn multiples [x]
+  (filter #(divisible? % x) (iterate inc 1)))
+
+(defn common [collA collB]
+  (lazy-seq (clojure.set/intersection (set collA)
+                                      (set collB))))
+
 (defn common-multiples [a b]
-  (distinct (remove nil?
-    (for [i (range 1 (+ 1 (* a b)))]
-      (if (and (divisible? i a)
-               (divisible? i b))
-        i)))))
+  (common (take-while #(<= % (* a b)) (multiples a))
+          (take-while #(<= % (* a b)) (multiples b))))
 
 (defn lcm [a b]
   (least (common-multiples a b)))
