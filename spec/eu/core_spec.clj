@@ -4,9 +4,6 @@
 
 (describe "Project Euler eu.core tests"
 
-  (it "should create a sequence up to n"
-    (should= '(1 2 3 4 5) (seq-upto 5)))
-
   (it "should recognize a palindrome"
     (should (palindrome? 1))
     (should-not (palindrome? 12))

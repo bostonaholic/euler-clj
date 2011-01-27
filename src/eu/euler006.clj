@@ -1,12 +1,13 @@
 (ns eu.euler006
   (:use [eu.core]
-        [math.core]))
+        [math.core]
+        [math.iota]))
 
 (defn sum-of-squares [n]
-  (reduce + (map square (seq-upto n))))
+  (reduce + (map square (to (+ n 1)))))
 
 (defn square-of-sums [n]
-  (square (reduce + (seq-upto n))))
+  (square (reduce + (to (+ n 1)))))
 
 (defn euler006 [n]
   (- (square-of-sums n) (sum-of-squares n)))
