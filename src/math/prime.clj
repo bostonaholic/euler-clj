@@ -14,11 +14,11 @@
 (defn prime-factors [x]
   (filter prime? (factors x)))
 
-(defn prime-sequence []
+(defn prime-seq []
   (filter prime? (iterate inc 1)))
 
 (defn nth-prime [n]
-  (last (take n (prime-sequence))))
+  (last (take n (prime-seq))))
 
 (defn primes-below-n [n]
-  (take-while #(< % n) (prime-sequence)))
+  (take-while #(< % n) (prime-seq)))
