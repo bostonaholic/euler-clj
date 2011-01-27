@@ -1,4 +1,5 @@
-(ns math.core)
+(ns math.core
+  (:use [clojure.set]))
 
 (defn divisible? [x, divisor]
   (zero? (rem x divisor)))
@@ -16,8 +17,8 @@
   (filter #(divisible? % x) (iterate inc 1)))
 
 (defn common [collA collB]
-  (lazy-seq (clojure.set/intersection (set collA)
-                                      (set collB))))
+  (lazy-seq (intersection (set collA)
+                          (set collB))))
 
 (defn common-multiples [a b]
   (common (take-while #(<= % (* a b)) (multiples a))
