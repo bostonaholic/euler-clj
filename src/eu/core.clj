@@ -8,7 +8,7 @@
       true
     (= (first (str s))
        (last (str s)))
-      (palindrome? (subs (str s)
+      (recur (subs (str s)
                          1
                          (- (.length (str s)) 1)))
     :else
