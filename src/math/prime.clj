@@ -3,11 +3,9 @@
 
 (defn prime? [x]
   (cond
-    (or (= x 2)
-        (= x 3))
+    (or (= x 2) (= x 3))
       true
-    (or (< x 2)
-        (even? x))
+    (or (< x 2) (even? x))
       false
     :else (no-factors? x)))
 
