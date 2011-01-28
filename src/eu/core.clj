@@ -1,5 +1,4 @@
-(ns eu.core
-  (:use [math.core]))
+(ns eu.core)
 
 (defn palindrome? [s]
   (cond
@@ -9,8 +8,8 @@
     (= (first (str s))
        (last (str s)))
       (recur (subs (str s)
-                         1
-                         (- (.length (str s)) 1)))
+                   1
+                   (- (.length (str s)) 1)))
     :else
       false))
 
