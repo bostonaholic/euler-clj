@@ -11,11 +11,12 @@
   (fn [start end]
     (iota identity dec #(> % end) start)))
 
-(defn to 
-  ([end]
-     (to 1 end))
-  ([start end]
+(def to
+  (fn this
+    ([end]
+     (this 1 end))
+    ([start end]
      (if (<= start end)
-        (upto start end)
-        (downto start end))))
+       (upto start end)
+       (downto start end)))))
 
