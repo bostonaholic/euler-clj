@@ -20,5 +20,5 @@
 (defn nth-prime [n]
   (last (take n (prime-seq))))
 
-(defn primes-below-n [n]
+(defn primes-below [n]
   (take-while #(< % n) (prime-seq)))
