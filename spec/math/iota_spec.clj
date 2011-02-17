@@ -1,6 +1,5 @@
 (ns math.iota
-  (:use [math.iota]
-        [speclj.core]))
+  (:use [speclj.core]))
 
 (describe "math.iota tests"
 

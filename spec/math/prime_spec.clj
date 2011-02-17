@@ -1,6 +1,5 @@
 (ns math.prime
-  (:use [math.prime]
-        [speclj.core]))
+  (:use [speclj.core]))
 
 (describe "math.prime tests"
 

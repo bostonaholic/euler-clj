@@ -1,6 +1,5 @@
 (ns math.core
-  (:use [math.core]
-        [speclj.core]))
+  (:use [speclj.core]))
 
 (describe "math.core tests"
 

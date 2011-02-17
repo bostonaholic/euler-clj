@@ -1,6 +1,5 @@
 (ns math.fibonacci
-  (:use [math.fibonacci]
-        [speclj.core]))
+  (:use [speclj.core]))
 
 (describe "math.fibonacci tests"
 
