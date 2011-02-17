@@ -42,7 +42,8 @@
       (factors-seq x (range 3 (+ 1 (Math/sqrt x))))))
 
 (defn no-factors? [x]
-  (= '() (factors x)))
+  (not-any? #(zero? (rem x %))
+            (factors x)))
 
 (defn product-of-collection [coll]
   (reduce * coll))
