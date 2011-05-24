@@ -1,7 +1,6 @@
 (ns eu.euler006
-  (:use [eu.core]
-        [math.core]
-        [math.iota]))
+  (:use eu.core
+        bostonaholic.utils.math))
 
 (defn sum-of-squares [n]
   (reduce + (map square (to (+ n 1)))))

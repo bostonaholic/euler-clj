@@ -1,5 +1,5 @@
 (ns eu.euler010
-  (:use [math.prime]))
+  (:use bostonaholic.utils.math.prime))
 
 (defn euler010 [n]
   (reduce + (primes-below n)))

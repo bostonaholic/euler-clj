@@ -1,5 +1,5 @@
 (ns eu.euler008
-  (:use [math.core]))
+  (:use bostonaholic.utils.math))
 
 (defn digits-to-collection [digits]
   (map #(Character/getNumericValue %) (str digits)))

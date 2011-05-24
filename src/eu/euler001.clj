@@ -1,6 +1,6 @@
 (ns eu.euler001
-  (:use [eu.core]
-        [math.core]))
+  (:use eu.core
+        bostonaholic.utils.math))
 
 (defn mod3or5 [x]
   (or (divisible? x 3)

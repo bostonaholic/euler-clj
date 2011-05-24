@@ -1,6 +1,6 @@
 (ns eu.euler003
-  (:use [eu.core]
-        [math.prime]))
+  (:use eu.core
+        bostonaholic.utils.math.prime))
 
 (defn euler003 [x]
   (last (prime-factors x)))
