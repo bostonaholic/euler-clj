@@ -1,5 +1,8 @@
 pom.xml
 *jar
-lib
-classes
+/lib/
+/classes/
+.lein-deps-sum
 *.swp
+*.iml
+/.idea
