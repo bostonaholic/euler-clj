@@ -1,4 +1,4 @@
-(ns eu.euler002
+(ns eu.euler002-spec
   (:use [eu.euler002]
         [speclj.core]))
 

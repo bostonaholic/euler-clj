@@ -1,4 +1,4 @@
-(ns eu.euler008
+(ns eu.euler008-spec
   (:use [eu.euler008]
         [speclj.core]))
 
@@ -12,7 +12,7 @@
     (should= '((2) (5)) (n-consecutive-digits 1 25))
     (should= '((2 5)) (n-consecutive-digits 2 25))
     (should= '((2 5) (5 6)) (n-consecutive-digits 2 256)))
-  
+
   (it "should multiply the inner collections"
     (should= '(2 5) (product-of-inner-collections '((2) (5))))
     (should= '(10) (product-of-inner-collections '((2 5))))
