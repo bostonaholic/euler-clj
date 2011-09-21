@@ -6,6 +6,7 @@
       (= 1 (.length s))))
 
 (defn first-and-last-equal? [s]
+  ;((= first last) (str s)))
   (= (first (str s))
      (last (str s))))
 
