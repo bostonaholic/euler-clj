@@ -4,15 +4,17 @@
 
 (describe "Project Euler eu.core tests"
 
-  (it "should detect very short strings"
-    (should (very-short-string? "1"))
-    (should (very-short-string? "")))
+  (it "should detect very shortness "
+    (should (very-short? ""))
+    (should (very-short? "1"))
+    (should-not (very-short? "12")))
 
-  (it "should detect string of greater than length 3 to not be short"
-    (should-not (very-short-string? "123")))
-
-  (it "should detect when the first and last characters are equal"
+  (it "should detect when the first and last are equal"
     (should (first-and-last-equal? "11")))
+
+  (it "returns the middle"
+    (should= "sd" (middle "asdf"))
+    (should= "" (middle "as")))
 
   (it "should recognize a palindrome"
     (should (palindrome? 1))
