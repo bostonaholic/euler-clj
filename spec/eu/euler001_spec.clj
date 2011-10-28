@@ -3,6 +3,10 @@
         [speclj.core]))
 
 (describe "Project Euler problem 1"
+          
+  (it "should be divisible"
+    (should (divisible? 4 2))
+    (should (divisible? 21 7)))
 
   (it "should return true for mod 3 or 5"
     (should (mod3or5 3))
