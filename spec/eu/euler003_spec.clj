@@ -1,6 +1,6 @@
 (ns eu.euler003-spec
-  (:use [eu.euler003]
-        [speclj.core]))
+  (:use speclj.core
+        eu.euler003))
 
 (describe "Project Euler problem 3"
 

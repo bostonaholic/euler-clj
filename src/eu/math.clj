@@ -25,7 +25,7 @@
 ;(to 5 -5)
 ;(to 10)
 
-(defn divisible? [x, divisor]
+(defn divisible? [x divisor]
   (zero? (rem x divisor)))
 
 (defn square [x]

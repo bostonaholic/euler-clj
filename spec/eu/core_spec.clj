@@ -1,8 +1,8 @@
 (ns eu.core-spec
-  (:use [eu.core]
-        [speclj.core]))
+  (:use speclj.core
+        eu.core))
 
-(describe "Project Euler eu.core tests"
+(describe "Project Euler core"
 
   (it "should detect very shortness "
     (should (very-short? ""))
