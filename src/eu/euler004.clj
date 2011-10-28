@@ -1,6 +1,6 @@
 (ns eu.euler004
   (:use eu.core
-        bostonaholic.utils.math))
+        eu.math))
 
 (defn palindromes-from-product [x y]
   (distinct

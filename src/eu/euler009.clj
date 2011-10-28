@@ -1,5 +1,5 @@
 (ns eu.euler009
-  (:use bostonaholic.utils.math))
+  (:use eu.math))
 
 (defn pyth-triplet? [a b c]
   (and (< a b c)

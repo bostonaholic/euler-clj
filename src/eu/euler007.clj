@@ -1,6 +1,6 @@
 (ns eu.euler007
   (:use eu.core
-        bostonaholic.utils.math.prime))
+        eu.prime))
 
 (defn euler007 [n]
   (nth-prime n))
