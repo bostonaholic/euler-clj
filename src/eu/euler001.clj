@@ -1,5 +1,4 @@
-(ns eu.euler001
-  (:use eu.core))
+(ns eu.euler001)
 
 (defn divisible? [x divisor]
   (zero? (rem x divisor)))
