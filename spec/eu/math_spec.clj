@@ -77,4 +77,7 @@
 
   (it "should find the product for a collection of integers"
     (should= 5 (product-of-collection '(5)))
-    (should= 25 (product-of-collection '(5 5)))))
+    (should= 25 (product-of-collection '(5 5))))
+
+  (it "splits a number into digits"
+      (should= '(8 6 7 2 3) (digits 32768))))

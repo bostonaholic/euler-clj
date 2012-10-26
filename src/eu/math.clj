@@ -98,3 +98,9 @@
 (defn product-of-collection [coll]
   "returns the result of multiplying by folding left"
   (reduce * coll))
+
+(defn digits [n]
+  (if (not (zero? n))
+    (let [next-dig (rem n 10)]
+      (lazy-seq (cons next-dig
+                      (digits (quot n 10)))))))
