@@ -28,7 +28,7 @@
               hundreds-count (word-length hundreds)
               remainder (rem number 100)]
           (+ hundreds-count (count "hundred")
-             (if (> remainder 0) (+ (count "and") (word-length remainder)) 0)))
+             (if-not (zero? remainder) (+ (count "and") (word-length remainder)) 0)))
         :else
         (let [thousands (thousands number)
               thousands-count (word-length thousands)
