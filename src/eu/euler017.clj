@@ -1,6 +1,6 @@
 (ns eu.euler017)
 
-(def decas ["" "" "twenty" "thirty" "forty" "fifty" "sixty" "seventy" "eighty" "ninety"])
+(def on-the-tens ["" "" "twenty" "thirty" "forty" "fifty" "sixty" "seventy" "eighty" "ninety"])
 
 (def first-twenty ["" "one" "two" "three" "four" "five"
                    "six" "seven" "eight" "nine" "ten"
@@ -19,10 +19,9 @@
         (count-lookup first-twenty number)
         (< number 100)
         (let [tens (tens number)
-              tens-count (count-lookup decas tens)
-              remainder (rem number 10)
-              remainder-count (word-length remainder)]
-          (+ tens-count remainder-count))
+              tens-count (count-lookup on-the-tens tens)
+              remainder (rem number 10)]
+          (+ tens-count (word-length remainder)))
         (< number 1000)
         (let [hundreds (hundreds number)
               hundreds-count (word-length hundreds)
