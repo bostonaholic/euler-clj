@@ -1,7 +1,5 @@
-(ns eu.euler001)
-
-(defn divisible? [x divisor]
-  (zero? (rem x divisor)))
+(ns eu.euler001
+  (:require [eu.math :refer [divisible?]]))
 
 (defn mod3or5 [x]
   (or (divisible? x 3)
